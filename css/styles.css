@@ -299,19 +299,57 @@ input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps)
     padding-left: 253px;
     top: 50px;
 }
-#social-nav p {
+#social-nav li{
+    display: inline-block;
+    margin: 40px 13px 0px 13px;
+}
+#social-nav p:first-child {
     display: none;
 }
+#social-nav li:first-child{
+    margin-left: -30px;
+}
+#social-nav p {
+    font: 20px "Bebas Neue", sans-serif;
+    color: #EB5428;
+    margin-top: -5px;
+    /* padding: 2px; */
+}
+#connect h3, #author h3{
+    display: none;
+}
+#social-nav svg {
+    margin-left: 10px;
+}
+/* #social-nav a {
+    display: block;
+} */
 #author img {
-    width: 100px;
+    width: 200px;
     height: auto;
+    margin: -30px 105.5px 0px 105.5px;
+    padding-bottom: 80px;
 }
 footer {
     font: 20px "Bebas Neue", sans-serif;
 }
+#author .copyright{
+    position: absolute;
+    margin-top: 200px;
+    margin-left: 155px;
+}
+#author .author {
+    position: absolute;
+    margin-top: 225px;
+    margin-left: 148px;
+}
 @media screen and (min-width: 768px) {
-    
+    body {
+        width: 768px;
+    }
 }
 @media screen and (min-width: 1280px) {
-    
+    body {
+        width: 1280px;
+    }
 }
