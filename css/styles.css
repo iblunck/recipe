@@ -33,4 +33,285 @@ dt {
     font-weight: bold;
 }
 dd {
-    font: 16px "Montserr
+    font: 16px "Montserrat", sans-serif;
+}
+a {
+    text-decoration: none;
+}
+#sides li{
+    font: 16px "Montserrat", sans-serif;
+    list-style-type: none;
+}
+#sides .menu {
+    font: 20px "Bebas Neue", sans-serif;
+}
+#sides .rating {
+    font: 16px "Montserrat", sans-serif;
+    font-weight: bold;
+}
+#taco-nav {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px 40px;
+}
+#jump {
+    padding-left: 30px;
+}
+#save {
+    margin-left: -4px;
+}
+#print {
+    margin-left: -3px;
+}
+#main-nav {
+    list-style-type: none;
+}
+#social-nav {
+    list-style-type: none;
+}
+#tacos img {
+    width: 100%;
+}
+#tacos h1 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+#tacos a {
+    display: block;  
+    position: absolute;
+    margin-top: -70px;
+}
+#taco-nav li{
+    display: inline-block;
+    font: 20px "Bebas Neue", sans-serif;
+    color: #EB5428;
+}
+#tacos p {
+    padding: 10px;
+    font: 16px "Montserrat", sans-serif;
+}
+#tacos {
+    padding-top: 150px;
+}
+#recipe h2 {
+    text-align: center;
+}
+#recipe dl{
+    padding-left: 10px;
+}
+#details dl {
+    display: grid;
+    grid-template-columns: max-content auto;
+}
+#details dt {
+    grid-column-start: 1;
+}
+#details dd {
+    grid-column-start: 2;
+}
+#ingredients li {
+    font: 16px "Montserrat", sans-serif;
+    padding-bottom: 15px;
+}
+#directions li {
+    margin-right: 15px;
+    font: 16px "Montserrat", sans-serif;
+    padding-bottom: 25px;
+    padding-left: 15px;
+}
+#directions {
+    margin-bottom: -25px;
+}
+#sides {
+    background-color: #7ABFBF;
+}
+#sides h2 {
+    text-align: center;
+    padding-top: 10px;
+}
+#sides ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: -20px;
+    padding-bottom: 20px;
+}
+#sides ul li:first-child, #sides ul li:nth-child(3), #sides ul li:nth-child(4), #sides ul li:nth-child(5) {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    margin-left: -25px;
+}
+#sides ul li:nth-child(2) {
+    grid-column-start: 1;
+}
+ul .rating {
+    margin-top: -40px;
+}
+ul .stars {
+    margin-top: -15px;
+}
+#sides ul li:nth-child(3) {
+    margin-top: -15px;
+}
+#sides img {
+    width: 100px;
+    height: auto;
+    margin-top: -50px;
+    margin-left: -25px;
+}
+#social-nav, footer {
+    background-color: white;
+}
+#main-nav {
+    width: 414px;
+    position: absolute;
+    display: inline;
+    top: 0px;
+    background-color: white;
+    height: 70px;
+    z-index: 2;
+}
+#main-nav h3 {
+    display: none;
+}
+#main-nav img {
+    height: 40px;
+    width: auto;
+}
+#main-nav ul {
+    width: 100%;
+    align-items: center;
+    margin-left: -25px;
+    transition: max-height .2s ease-out;
+    overflow:hidden;
+    max-height:0;
+}
+#main-nav a {
+    display: block;
+}
+#main-nav li {
+    display: inline-block;
+    overflow: hidden;
+    font: 20px "Bebas Neue", sans-serif;
+}
+#drpdn {
+    display: inline-block;
+    text-align: center;
+    top: 0;
+}
+nav label {
+    cursor: pointer;
+    display: inline;
+    margin-top: -100px;
+    margin-left: 20px;
+    position: absolute;
+    user-select: none;
+    left: 0;
+}
+label span {
+    background-color: black;
+    display: block;
+    height: 2px;
+    position: relative;
+    transition: background-color .2s ease-out;
+    width: 18px;
+}
+label span:before, label span:after {
+    background: black;
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    transition: all .2s ease-out;
+    width: 100%;
+}
+label span:before {
+    top: 5px;
+}
+label span:after {
+    top: -5px;
+}
+input {
+  display:none;
+}
+input:checked ~ ul {
+    max-height: 500px;
+}
+input:checked ~ label span {
+    background: transparent;
+}
+input:checked ~ label span:before {
+    transform: rotate(-45deg);
+}
+input:checked ~ label span:after {
+    transform: rotate(45deg);
+}
+input:checked ~ label:not(.steps) span:before, input:checked ~ label:not(.steps) span:after {
+    top: 0;
+}
+#search {
+    width: 300px;
+    margin-left: 55.5px;
+    border: solid #EB5428;
+    background-color: white;
+    color: #F2F2F2;
+}
+#search button {
+    background-color: #EB5428;
+    margin-left: 248px;
+    border: 0px;
+}
+#search::placeholder{
+    color: black;
+}
+#knife-fork {
+    position: absolute;
+    top: 0px;
+    margin-left: 70px;
+    width: 271px;
+    height: 70px;
+    background-color: #EB5428;
+}
+#knife-fork svg {
+    width: 100%;
+    margin: 0px auto;
+    padding-top: 3px;
+}
+#burger svg {
+    margin: 8px 15px 0px 15px;
+    width: auto;
+}
+#main-nav p {
+    font: 20px "Bebas Neue", sans-serif;
+    margin-top: -5px;
+    color: black;
+    padding-left: 17px;
+}
+#avatar {
+    position: absolute;
+    top: 8px;
+    right: 16px;
+}
+#main-nav #sign-up {
+    position: absolute;
+    color: black;
+    font: 20px "Bebas Neue", sans-serif;
+    padding-left: 253px;
+    top: 50px;
+}
+#social-nav p {
+    display: none;
+}
+#author img {
+    width: 100px;
+    height: auto;
+}
+footer {
+    font: 20px "Bebas Neue", sans-serif;
+}
+@media screen and (min-width: 768px) {
+    
+}
+@media screen and (min-width: 1280px) {
+    
+}
