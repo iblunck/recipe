@@ -170,6 +170,7 @@ ul .stars {
     background-color: white;
     height: 70px;
     z-index: 2;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.3);
 }
 #main-nav h3 {
     display: none;
